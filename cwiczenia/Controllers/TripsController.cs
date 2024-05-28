@@ -1,5 +1,6 @@
 ﻿using cwiczenia.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace cwiczenia.Controllers;
 
@@ -17,9 +18,16 @@ public class TripsController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetTrips()
     {
-        var trips = _context.Trips.ToList();
+        var trips = await _context.Trips.Select(e => new
+        {
+            Name = e.Name,
+            Countries = e.IdCountries.Select(c => new
+            {
+                Name = c.Name
+            })
+        }).ToListAsync();
         
-        return Ok();
+        return Ok(trips);
     }
 
 }

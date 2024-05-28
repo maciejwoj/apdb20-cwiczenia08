@@ -135,3 +135,4 @@ C:\Users\s27578\RiderProjects\cwiczenia\cwiczenia\obj\Debug\net8.0\refint\cwicze
 C:\Users\s27578\RiderProjects\cwiczenia\cwiczenia\obj\Debug\net8.0\cwiczenia.pdb
 C:\Users\s27578\RiderProjects\cwiczenia\cwiczenia\obj\Debug\net8.0\cwiczenia.genruntimeconfig.cache
 C:\Users\s27578\RiderProjects\cwiczenia\cwiczenia\obj\Debug\net8.0\ref\cwiczenia.dll
+C:\Users\s27578\RiderProjects\cwiczenia\cwiczenia\obj\Debug\net8.0\cwiczenia.sourcelink.json
